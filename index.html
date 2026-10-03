@@ -92,7 +92,8 @@ details p{margin:0 0 16px;color:var(--ardosia)}
 .quem{background:var(--marinho);color:var(--creme);border-radius:24px;padding:28px 22px}
 .quem h2{color:var(--creme)}
 .quem p{margin:12px 0 0}
-.quem a{color:var(--ambar-2)}
+.quem a:not(.btn){color:var(--ambar-2)}
+.quem :focus-visible{outline-color:var(--creme)}
 .quem .eyebrow{color:#C9D2DE}
 .creditos{font-size:13px;color:var(--ardosia)}
 .creditos summary{font:600 14px var(--texto);min-height:44px}
@@ -118,9 +119,9 @@ details p{margin:0 0 16px;color:var(--ardosia)}
   <div>
     <h1>O vídeo da sua casa, feito com as fotos que você já tem</h1>
     <p class="sub">Para Instagram e site. Sem nova sessão.</p>
-    <p class="apoio">Demonstração com fotos de banco livre. O movimento de câmera é gerado por IA; os ambientes são os das fotos.</p>
-    <a class="btn cta" href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">Quero uma amostra da minha casa</a>
-    <p class="apoio">Mande o nome da casa. A amostra de 1 cômodo não tem custo.<br>Ou escreva para <strong>pricedigital.contato@gmail.com</strong></p>
+    <p class="apoio">Demonstração com fotos de banco livre. Cada cena é uma das fotos; só o movimento da câmera é gerado por IA.</p>
+    <a class="btn cta" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a>
+    <p class="apoio">Mande o nome da casa. A amostra de 1 cômodo não tem custo.<br>Prefere e-mail? <a href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">pricedigital.contato@gmail.com</a></p>
   </div>
   <div class="hero-video"><video id="hero" muted loop playsinline preload="metadata" poster="demos/casa-praia-ia/vertical.webp"
     aria-label="Vídeo de demonstração: casa de praia" src="demos/casa-praia-ia/hero.mp4"></video>
@@ -130,19 +131,19 @@ details p{margin:0 0 16px;color:var(--ardosia)}
 <section aria-labelledby="h-bom" style="padding-top:12px"><div class="wrap">
   <p class="eyebrow">Fica bom</p>
   <h2 id="h-bom">Vídeo de demonstração de casa de temporada</h2>
-  <p class="lead">Um vídeo de demonstração, feito com 13 fotos de banco livre de uma casa de praia. Vertical e horizontal.</p>
-  <p class="lead"><strong>É fiel.</strong> Tudo o que aparece no vídeo está nas suas fotos. A IA cria o movimento da câmera e a passagem entre os ambientes, e eu confiro cada cena com a foto. Ao lado de cada vídeo, as fotos que foram usadas. Trilha original da Price Digital.</p>
+  <p class="lead">Um vídeo de demonstração, feito com 11 fotos de banco livre de uma casa de praia. Vertical e horizontal.</p>
+  <p class="lead"><strong>É fiel.</strong> Tudo o que aparece no vídeo está nestas 11 fotos. Cada cena é uma delas: a IA cria só o movimento da câmera, sem passagem inventada de um ambiente para outro, e eu confiro cada cena com a foto. Abaixo do vídeo, as fotos que foram usadas. Trilha original da Price Digital.</p>
   <div class="demos">
 <article class="demo" id="demo-casa-praia-ia">
   <h3>Demonstração: casa de praia</h3>
-  <p class="leg">Demonstração com fotos de banco livre de uma casa de praia: 13 fotos, câmera gerada por IA. Nenhum ambiente ou móvel foi acrescentado.</p>
+  <p class="leg">Demonstração com fotos de banco livre de uma casa de praia: 11 fotos, cada cena é uma delas. Só a câmera é gerada por IA. Nenhum ambiente ou móvel foi acrescentado.</p>
   <div class="player" data-demo="casa-praia-ia">
     <video controls playsinline preload="none" poster="demos/casa-praia-ia/vertical.webp" width="360" height="640"
       src="demos/casa-praia-ia/vertical.mp4" aria-label="Vídeo de demonstração: casa de praia"></video>
   </div>
   <button class="btn sec orient" type="button" data-demo="casa-praia-ia" aria-pressed="false">Ver em horizontal (16:9)</button>
-  <p class="selo">Demonstração: fotos de banco livre (Unsplash), não é um cliente. Câmera e transições geradas por IA a partir das fotos.</p>
-  <p class="fiel"><strong>Feito só com estas 13 fotos.</strong> Os ambientes do vídeo são os destas fotos.</p><ul class="tira" aria-label="Fotos usadas no vídeo casa de praia" tabindex="0"><li><img src="demos/casa-praia-ia/rlesyj-1Kv0.webp" alt="Foto de origem: Fachada" width="180" height="120" loading="lazy" decoding="async"><span>Fachada</span></li><li><img src="demos/casa-praia-ia/qLJMuJkD4as.webp" alt="Foto de origem: Entrada" width="180" height="120" loading="lazy" decoding="async"><span>Entrada</span></li><li><img src="demos/casa-praia-ia/G_g0L4ygli0.webp" alt="Foto de origem: Piscina e cabana" width="180" height="120" loading="lazy" decoding="async"><span>Piscina e cabana</span></li><li><img src="demos/casa-praia-ia/pzVKBM1fbJk.webp" alt="Foto de origem: Piscina com pergolado" width="180" height="120" loading="lazy" decoding="async"><span>Piscina com pergolado</span></li><li><img src="demos/casa-praia-ia/McYRvVVEliE.webp" alt="Foto de origem: Varanda com rede" width="180" height="120" loading="lazy" decoding="async"><span>Varanda com rede</span></li><li><img src="demos/casa-praia-ia/GGx0rUwnSPk.webp" alt="Foto de origem: Varanda" width="180" height="120" loading="lazy" decoding="async"><span>Varanda</span></li><li><img src="demos/casa-praia-ia/YTnLXCH0jWw.webp" alt="Foto de origem: Área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Área gourmet</span></li><li><img src="demos/casa-praia-ia/OsUiWBJ4AXU.webp" alt="Foto de origem: Bar da área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Bar da área gourmet</span></li><li><img src="demos/casa-praia-ia/baap3vgDMcU.webp" alt="Foto de origem: Mesa da área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Mesa da área gourmet</span></li><li><img src="demos/casa-praia-ia/LtlBlCal4Fw.webp" alt="Foto de origem: Sala de pé-direito duplo" width="180" height="120" loading="lazy" decoding="async"><span>Sala de pé-direito duplo</span></li><li><img src="demos/casa-praia-ia/9TZf3KZS-tM.webp" alt="Foto de origem: Sala, outro ângulo" width="180" height="120" loading="lazy" decoding="async"><span>Sala, outro ângulo</span></li><li><img src="demos/casa-praia-ia/1iiFe6dFQ_M.webp" alt="Foto de origem: Sala com cortina alta" width="180" height="120" loading="lazy" decoding="async"><span>Sala com cortina alta</span></li><li><img src="demos/casa-praia-ia/89GEBhKzyJ4.webp" alt="Foto de origem: Jacuzzi da varanda" width="180" height="120" loading="lazy" decoding="async"><span>Jacuzzi da varanda</span></li></ul>
+  <p class="selo">Demonstração: fotos de banco livre (Unsplash), não é um cliente. Câmera gerada por IA a partir das fotos; cada cena é uma delas.</p>
+  <p class="fiel"><strong>Feito só com estas 11 fotos.</strong> Os ambientes do vídeo são os destas fotos.</p><ul class="tira" aria-label="Fotos usadas no vídeo casa de praia" tabindex="0"><li><img src="demos/casa-praia-ia/rlesyj-1Kv0.webp" alt="Foto de origem: Fachada" width="180" height="120" loading="lazy" decoding="async"><span>Fachada</span></li><li><img src="demos/casa-praia-ia/qLJMuJkD4as.webp" alt="Foto de origem: Entrada" width="180" height="120" loading="lazy" decoding="async"><span>Entrada</span></li><li><img src="demos/casa-praia-ia/G_g0L4ygli0.webp" alt="Foto de origem: Piscina e cabana" width="180" height="120" loading="lazy" decoding="async"><span>Piscina e cabana</span></li><li><img src="demos/casa-praia-ia/pzVKBM1fbJk.webp" alt="Foto de origem: Piscina com pergolado" width="180" height="120" loading="lazy" decoding="async"><span>Piscina com pergolado</span></li><li><img src="demos/casa-praia-ia/McYRvVVEliE.webp" alt="Foto de origem: Varanda com rede" width="180" height="120" loading="lazy" decoding="async"><span>Varanda com rede</span></li><li><img src="demos/casa-praia-ia/GGx0rUwnSPk.webp" alt="Foto de origem: Varanda" width="180" height="120" loading="lazy" decoding="async"><span>Varanda</span></li><li><img src="demos/casa-praia-ia/YTnLXCH0jWw.webp" alt="Foto de origem: Área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Área gourmet</span></li><li><img src="demos/casa-praia-ia/OsUiWBJ4AXU.webp" alt="Foto de origem: Bar da área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Bar da área gourmet</span></li><li><img src="demos/casa-praia-ia/LtlBlCal4Fw.webp" alt="Foto de origem: Sala de pé-direito duplo" width="180" height="120" loading="lazy" decoding="async"><span>Sala de pé-direito duplo</span></li><li><img src="demos/casa-praia-ia/1iiFe6dFQ_M.webp" alt="Foto de origem: Sala com cortina alta" width="180" height="120" loading="lazy" decoding="async"><span>Sala com cortina alta</span></li><li><img src="demos/casa-praia-ia/89GEBhKzyJ4.webp" alt="Foto de origem: Jacuzzi da varanda" width="180" height="120" loading="lazy" decoding="async"><span>Jacuzzi da varanda</span></li></ul>
 </article></div>
 </div></section>
 
@@ -158,27 +159,26 @@ details p{margin:0 0 16px;color:var(--ardosia)}
 <section aria-labelledby="h-recebe" style="padding-top:8px"><div class="wrap">
   <h2 id="h-recebe">O que você recebe</h2>
   <p class="lead">O vídeo da casa em vertical (9:16, para Reels e Stories) e horizontal (16:9, para site, YouTube e WhatsApp), com trilha original da Price Digital, 1 ajuste incluído e prazo combinado por escrito.</p>
-  <p class="lead"><strong>Quanto custa?</strong> A amostra é sem custo. O orçamento vem depois que você vê o vídeo da sua casa. Se perguntar antes, eu respondo na hora.</p>
+  <p class="lead"><strong>Quanto custa?</strong> A amostra é sem custo. O orçamento vem depois que você vê o vídeo da sua casa. Se preferir saber antes, é só perguntar.</p>
 </div></section>
 
 <section aria-labelledby="h-faq" style="padding-top:8px"><div class="wrap">
   <h2 id="h-faq">Perguntas frequentes</h2>
   <details><summary>As fotos são do meu fotógrafo. Posso?</summary><p>Sim, com a autorização de quem tem o direito de uso. Explico em uma linha na proposta.</p></details>
   <details><summary>Preciso receber visita ou parar a casa?</summary><p>Não. O vídeo é feito só com as fotos que você já tem.</p></details>
-  <details><summary>A amostra fica pública?</summary><p>Não. Ela é só de vocês, não é pública: só abre por um link enviado a você e sai do ar na data informada na própria página.</p></details>
+  <details><summary>A amostra fica pública?</summary><p>Não. Ela só abre por um link enviado a você e sai do ar na data informada na própria página.</p></details>
   <details><summary>O vídeo aparece no anúncio do Airbnb?</summary><p>O anúncio comum do Airbnb não aceita vídeo. O uso é no Instagram, no site e no WhatsApp.</p></details>
   <details><summary>Posso pedir só uma casa?</summary><p>Pode. Para mais casas há pacotes fechados, sem fidelidade.</p></details>
-  <details><summary>O vídeo é feito com inteligência artificial?</summary><p>Sim. Os ambientes, móveis, acabamentos e a vista são os das suas fotos. O movimento de câmera e a passagem de um ambiente para outro são gerados por inteligência artificial e podem não corresponder ao trajeto real da casa. Confiro cada cena com as fotos e descarto o que muda o imóvel. O vídeo sai com um aviso discreto de IA, e ao postar no Instagram vale marcar "Informações de IA".</p></details>
+  <details><summary>O vídeo é feito com inteligência artificial?</summary><p>Sim. Cada cena é uma das suas fotos: os ambientes, móveis, acabamentos e a vista são os das fotos, e a inteligência artificial cria só o movimento da câmera dentro de cada uma. Não há passagem inventada de um ambiente para outro. Confiro cada cena com a foto e descarto o que muda o imóvel. O vídeo sai com um aviso de IA, e ao postar no Instagram vale marcar "Informações de IA".</p></details>
   <details><summary>Vocês guardam os vídeos?</summary><p>Guardo uma cópia por 90 dias após a entrega, só para reenviar se você perder o arquivo. Depois disso, apago da minha base, por isso vale salvar assim que receber.</p></details>
   <details><summary>E se eu desistir depois de pagar o sinal?</summary><p>Se for antes de eu começar, o sinal volta inteiro. Depois que a prévia é entregue, o sinal não é devolvido.</p></details>
 </div></section>
 
 <section aria-labelledby="h-quem"><div class="wrap"><div class="quem">
-  <p class="eyebrow">Quem faz</p>
   <h2 id="h-quem">Quem faz</h2>
-  <p>Brunno · Price Digital, Rio de Janeiro/RJ. CNPJ 63.035.765/0001-87. Quem faz os vídeos é Brunno, casa por casa.</p>
-  <p>Contato: <a href="mailto:pricedigital.contato@gmail.com">pricedigital.contato@gmail.com</a> · WhatsApp: <a href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%3A%20%0AEmpresa%3A%20" target="_blank" rel="noopener">(21) 98465-9410</a> · Instagram: <a href="https://ig.me/m/pricedigital.video" rel="noopener">@pricedigital.video</a></p>
-  <p><a class="btn" style="margin-top:8px" href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">Quero uma amostra da minha casa</a></p>
+  <p>Brunno · Price Digital, Rio de Janeiro/RJ. CNPJ 63.035.765/0001-87. Quem faz os vídeos é o Brunno, casa por casa.</p>
+  <p>Contato: <a href="mailto:pricedigital.contato@gmail.com">pricedigital.contato@gmail.com</a> · WhatsApp: <a href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">(21) 98465-9410</a> · Instagram: <a href="https://www.instagram.com/pricedigital.video/" rel="noopener">@pricedigital.video</a></p>
+  <p><a class="btn" style="margin-top:8px" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a></p>
 </div></div></section>
 </main>
 
@@ -189,20 +189,18 @@ details p{margin:0 0 16px;color:var(--ardosia)}
     <p>Fotos de banco livre, licença Unsplash (uso livre). Trilha original da Price Digital.</p>
     <ul><li>Demonstração: casa de praia · 1iiFe6dFQ_M.jpg: <a href="https://unsplash.com/photos/1iiFe6dFQ_M" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · 89GEBhKzyJ4.jpg: <a href="https://unsplash.com/photos/89GEBhKzyJ4" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · 9TZf3KZS-tM.jpg: <a href="https://unsplash.com/photos/9TZf3KZS-tM" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · GGx0rUwnSPk.jpg: <a href="https://unsplash.com/photos/GGx0rUwnSPk" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · G_g0L4ygli0.jpg: <a href="https://unsplash.com/photos/G_g0L4ygli0" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · LtlBlCal4Fw.jpg: <a href="https://unsplash.com/photos/LtlBlCal4Fw" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · McYRvVVEliE.jpg: <a href="https://unsplash.com/photos/McYRvVVEliE" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · OsUiWBJ4AXU.jpg: <a href="https://unsplash.com/photos/OsUiWBJ4AXU" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · YTnLXCH0jWw.jpg: <a href="https://unsplash.com/photos/YTnLXCH0jWw" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · baap3vgDMcU.jpg: <a href="https://unsplash.com/photos/baap3vgDMcU" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · pzVKBM1fbJk.jpg: <a href="https://unsplash.com/photos/pzVKBM1fbJk" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · qLJMuJkD4as.jpg: <a href="https://unsplash.com/photos/qLJMuJkD4as" rel="noopener">Unsplash</a></li>
 <li>Demonstração: casa de praia · rlesyj-1Kv0.jpg: <a href="https://unsplash.com/photos/rlesyj-1Kv0" rel="noopener">Unsplash</a></li></ul></details>
 </div></footer>
 
-<div class="barra"><a class="btn" href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">Quero uma amostra da minha casa</a></div>
+<div class="barra"><a class="btn" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a></div>
 
 <script>
 (function(){
