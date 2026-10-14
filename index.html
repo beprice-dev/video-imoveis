@@ -1,227 +1,176 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
+<html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Vídeo de casa de temporada feito só com as suas fotos</title>
-<meta name="description" content="Vídeo vertical e horizontal da sua casa de temporada, feito só com as fotos que você já tem. Sem visita nem nova sessão. Peça a amostra de 1 cômodo, sem custo.">
+<title>Vídeo do seu imóvel, feito com as suas fotos | Price Digital</title>
+<meta name="description" content="Vídeo vertical ou horizontal do seu imóvel, feito só com as fotos que você já tem. Sem visita nem nova sessão. Peça a amostra de 1 cômodo, sem custo.">
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://beprice-dev.github.io/video-imoveis/">
-<meta name="theme-color" content="#F4EFE6">
-<meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Price Digital"><meta property="og:url" content="https://beprice-dev.github.io/video-imoveis/">
-<meta property="og:title" content="O vídeo da sua casa de temporada, feito com as fotos que você já tem">
-<meta property="og:description" content="Para Instagram e site. Sem nova sessão. Amostra de 1 cômodo sem custo.">
-<meta property="og:type" content="website"><meta property="og:image" content="https://beprice-dev.github.io/video-imoveis/assets/og-image.jpg">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Vídeo da casa de temporada feito com as suas fotos, por Price Digital">
+<link rel="canonical" href="https://video.pricedigital.com.br/">
+<meta name="theme-color" content="#F6F0E4">
+<meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Price Digital"><meta property="og:type" content="website">
+<meta property="og:url" content="https://video.pricedigital.com.br/">
+<meta property="og:title" content="O vídeo do seu imóvel, fiel às suas fotos">
+<meta property="og:description" content="Sem nova sessão e sem visita. Amostra de 1 cômodo sem custo. Imagem: imóvel fictício gerado por IA, demonstração.">
+<meta property="og:image" content="https://video.pricedigital.com.br/assets/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quadro de demonstração de um imóvel fictício gerado por IA, com piscina de borda infinita ao pôr do sol">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://beprice-dev.github.io/video-imoveis/#org", "name": "Price Digital", "url": "https://beprice-dev.github.io/video-imoveis/", "email": "pricedigital.contato@gmail.com", "image": "https://beprice-dev.github.io/video-imoveis/assets/og-image.jpg", "address": {"@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR"}, "areaServed": {"@type": "Country", "name": "Brasil"}}, {"@type": "Service", "name": "Vídeo de imóveis de temporada", "serviceType": "Vídeo a partir das fotos do imóvel", "description": "Vídeo vertical e horizontal feito com as fotos reais da casa. O movimento (câmera, transições, água e folhas) é gerado por IA.", "provider": {"@id": "https://beprice-dev.github.io/video-imoveis/#org"}, "areaServed": {"@type": "Country", "name": "Brasil"}}]}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" href="assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face{font-family:"Manrope";src:url("assets/manrope.woff2") format("woff2");font-weight:200 800;font-display:swap}
-@font-face{font-family:"DM Sans";src:url("assets/dmsans.woff2") format("woff2");font-weight:100 900;font-display:swap}
-*,*::before,*::after{box-sizing:border-box}
-:root{--marinho:#0F2A47;--creme:#F4EFE6;--ambar:#E8A317;--ambar-2:#F2B63D;--ardosia:#47576B;--papel:#FBF9F5;--linha:rgba(15,42,71,.14);--r:16px;
---titulo:"Manrope",system-ui,sans-serif;--texto:"DM Sans",system-ui,sans-serif}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--creme);color:var(--marinho);font:400 17px/1.6 var(--texto);-webkit-tap-highlight-color:transparent}
-img,video{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--marinho);outline-offset:3px;border-radius:6px}
-.pular{position:absolute;left:12px;top:-60px;background:var(--marinho);color:var(--creme);padding:10px 14px;border-radius:8px;z-index:50}
-.pular:focus{top:12px}
-.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
-header.topo{padding:14px 0}
-header.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
-header.topo img{height:34px;width:auto}
-header.topo span{font-size:14px;color:var(--ardosia)}
-h1,h2,h3{font-family:var(--titulo);letter-spacing:-.02em;line-height:1.12;margin:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:14px 24px;border-radius:999px;background:var(--ambar);color:var(--marinho);font:800 17px/1.2 var(--titulo);text-decoration:none;border:0;cursor:pointer;touch-action:manipulation;transition:background .15s,transform .15s}
-.btn:hover{background:var(--ambar-2)}
-.btn:active{transform:scale(.98)}
-.btn.sec{background:transparent;border:2px solid var(--marinho);min-height:48px;font-weight:700}
-.btn.sec:hover{background:rgba(15,42,71,.07)}
-.selo{display:inline-block;font-size:13px;line-height:1.35;color:var(--ardosia)}
-footer.rodape{padding:36px 0 48px;border-top:1px solid var(--linha);font-size:15px;color:var(--ardosia)}
-footer.rodape p{margin:.3em 0}
-@media (hover:none){.btn:hover{background:var(--ambar)}}
-
-body{padding-bottom:84px}
-.hero{padding:8px 0 36px}
-.hero .wrap{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
-.hero h1{font-size:clamp(30px,8vw,52px);font-weight:800}
-.hero .sub{font-size:19px;color:var(--ardosia);margin:10px 0 0}
-.hero .apoio{font-size:15px;color:var(--ardosia);margin:10px 0 0}
-.hero .cta{display:none}
-.hero-video{justify-self:center;width:min(100%,calc(52svh * 9 / 16));border-radius:20px;overflow:hidden;background:#0F2A47;aspect-ratio:9/16;box-shadow:0 18px 40px -22px rgba(15,42,71,.55)}
-.hero-video{position:relative}
-.hero-video video{width:100%;height:100%;object-fit:cover}
-.pp{position:absolute;right:10px;bottom:10px;width:48px;height:48px;border-radius:50%;border:2px solid #F4EFE6;background:rgba(15,42,71,.82);color:#F4EFE6;font:700 15px var(--titulo);cursor:pointer;display:grid;place-items:center}
-.pp:focus-visible{outline:3px solid #F4EFE6;outline-offset:3px}
-.barra{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.96);border-top:1px solid var(--linha);z-index:20}
-.barra .btn{width:100%}
-section{padding:44px 0}
-section h2{font-size:clamp(25px,6vw,36px);font-weight:800}
-.eyebrow{font:700 13px/1 var(--titulo);letter-spacing:.09em;text-transform:uppercase;color:var(--ardosia);margin:0 0 10px}
-.lead{color:var(--ardosia);margin:12px 0 0;max-width:60ch}
-.passos{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;counter-reset:p}
-.passos li{counter-increment:p;background:var(--papel);border:1px solid var(--linha);border-radius:var(--r);padding:16px 16px 16px 60px;position:relative}
-.passos li::before{content:counter(p);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--marinho);color:var(--creme);display:grid;place-items:center;font:800 16px var(--titulo)}
-.demos{display:grid;gap:40px;margin-top:26px;grid-template-columns:minmax(0,1fr)}
-.demos>*,.hero .wrap>*{min-width:0}
-.demo{background:var(--papel);border:1px solid var(--linha);border-radius:22px;padding:18px}
-.demo h3{font-size:22px}
-.demo .leg{margin:6px 0 14px;color:var(--ardosia);font-size:15px}
-.player{width:min(100%,360px);margin:0 auto 12px;border-radius:16px;overflow:hidden;background:#0F2A47;aspect-ratio:9/16}
-.player.h{width:100%;max-width:640px;aspect-ratio:16/9}
-.player video{width:100%;height:100%;object-fit:cover}
-.orient{width:100%;margin-bottom:10px}
-.fiel{margin:16px 0 8px;font-size:16px}
-.tira{list-style:none;margin:0;padding:2px 2px 10px;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x proximity}
-.tira li{flex:0 0 150px;scroll-snap-align:start;font-size:13px;color:var(--ardosia)}
-.tira img{width:150px;height:100px;object-fit:cover;border-radius:10px;margin-bottom:4px}
-.recebe{display:grid;gap:8px;margin-top:14px;padding:0;list-style:none}
-.recebe li{padding-left:26px;position:relative}
-.recebe li::before{content:"";position:absolute;left:4px;top:.6em;width:10px;height:10px;border-radius:50%;background:var(--ambar)}
-details{background:var(--papel);border:1px solid var(--linha);border-radius:14px;padding:0 16px;margin-top:10px}
-summary{cursor:pointer;min-height:52px;display:flex;align-items:center;font:700 17px var(--titulo);list-style-position:inside}
-details p{margin:0 0 16px;color:var(--ardosia)}
-.quem{background:var(--marinho);color:var(--creme);border-radius:24px;padding:28px 22px}
-.quem h2{color:var(--creme)}
-.quem p{margin:12px 0 0}
-.quem a:not(.btn){color:var(--ambar-2)}
-.quem :focus-visible{outline-color:var(--creme)}
-.quem .eyebrow{color:#C9D2DE}
-.creditos{font-size:13px;color:var(--ardosia)}
-.creditos summary{font:600 14px var(--texto);min-height:44px}
-.creditos ul{margin:0 0 14px;padding-left:18px}
-@media (min-width:860px){
-  body{padding-bottom:0} .barra{display:none}
-  .hero{padding:36px 0 56px}
-  .hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:56px}
-  .hero .cta{display:inline-flex;margin-top:24px}
-  .hero-video{width:min(100%,380px);justify-self:end}
-  .demos{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .passos{grid-template-columns:repeat(3,1fr)}
-  .passos li{padding:62px 18px 18px 18px}
-  .passos li::before{top:16px;left:18px}
-}
-</style>
-</head>
-<body>
-<a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo"><div class="wrap"><img src="assets/logo.svg" alt="Price Digital" width="129" height="34"><span>Vídeo de imóveis de temporada</span></div></header>
+<link rel="preload" href="assets/sg700.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/dm400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://video.pricedigital.com.br/#org","name":"Price Digital","url":"https://video.pricedigital.com.br/","email":"pricedigital.contato@gmail.com","telephone":"+5521984659410","image":"https://video.pricedigital.com.br/assets/og-image.jpg","address":{"@type":"PostalAddress","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"areaServed":{"@type":"Country","name":"Brasil"},"legalName":"Beerre Brunno Ferrari Price","taxID":"63.035.765/0001-87","sameAs":["https://www.instagram.com/pricedigital.video/"]},{"@type":"Service","name":"Vídeo de imóveis a partir das fotos","serviceType":"Vídeo a partir das fotos do imóvel","description":"Vídeo feito com as fotos reais do imóvel. O movimento (câmera, transições, água e folhas) é gerado por IA.","provider":{"@id":"https://video.pricedigital.com.br/#org"},"areaServed":{"@type":"Country","name":"Brasil"},"offers":{"@type":"Offer","priceCurrency":"BRL","priceSpecification":{"@type":"PriceSpecification","minPrice":497,"priceCurrency":"BRL"},"description":"A partir de R$ 497 (pacote Essencial: 20 a 30 segundos, até 6 tomadas, 1 formato, 1 ajuste). Amostra de 1 cômodo sem custo."}}]}</script>
+</head><body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="top"><a class="brand" href="#inicio" aria-label="Price Digital, início">PRICE<span> / </span>DIGITAL</a><span class="tag">Vídeo de imóveis</span></header>
 <main id="conteudo">
-<section class="hero" style="padding-top:8px"><div class="wrap">
-  <div>
-    <h1>O vídeo da sua casa, feito com as fotos que você já tem</h1>
-    <p class="sub">Para Instagram e site. Sem nova sessão.</p>
-    <p class="apoio">Demonstração com fotos de banco livre. A IA cria o movimento da câmera, o caminho entre duas fotos do mesmo ambiente e o movimento leve da água e das folhas.</p>
-    <a class="btn cta" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a>
-    <p class="apoio">Mande o nome da casa. A amostra de 1 cômodo não tem custo.<br>Prefere e-mail? <a href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">pricedigital.contato@gmail.com</a></p>
-  </div>
-  <div class="hero-video"><video id="hero" muted loop playsinline preload="metadata" poster="demos/casa-praia-ia/vertical.webp"
-    aria-label="Vídeo de demonstração: casa de praia" src="demos/casa-praia-ia/hero.mp4"></video>
-    <button type="button" id="hero-pp" class="pp" aria-label="Pausar o vídeo"><span aria-hidden="true">❚❚</span></button></div>
-</div></section>
 
-<section aria-labelledby="h-bom" style="padding-top:12px"><div class="wrap">
-  <p class="eyebrow">Fica bom</p>
-  <h2 id="h-bom">Vídeo de demonstração de casa de temporada</h2>
-  <p class="lead">Um vídeo de demonstração, feito com 11 fotos de banco livre de uma casa de praia. Vertical e horizontal.</p>
-  <p class="lead"><strong>É fiel.</strong> Tudo o que aparece no vídeo está nestas 11 fotos. Em algumas cenas a câmera vai de uma foto a outra do mesmo ambiente: o movimento, o trecho entre as duas e o movimento leve da água e das folhas são gerados pela IA, e eu confiro cada cena com as fotos e descarto o que muda o imóvel. Abaixo do vídeo, as fotos que foram usadas. Trilha original da Price Digital.</p>
-  <div class="demos">
-<article class="demo" id="demo-casa-praia-ia">
-  <h3>Demonstração: casa de praia</h3>
-  <p class="leg">Demonstração com fotos de banco livre de uma casa de praia: 11 fotos. A câmera e o caminho entre duas fotos do mesmo ambiente são gerados por IA. Nenhum ambiente ou móvel foi acrescentado.</p>
-  <div class="player" data-demo="casa-praia-ia">
-    <video controls playsinline preload="none" poster="demos/casa-praia-ia/vertical.webp" width="360" height="640"
-      src="demos/casa-praia-ia/vertical.mp4" aria-label="Vídeo de demonstração: casa de praia"></video>
-  </div>
-  <button class="btn sec orient" type="button" data-demo="casa-praia-ia" aria-pressed="false">Ver em horizontal (16:9)</button>
-  <p class="selo">Demonstração: fotos de banco livre (Unsplash), não é um cliente. Tudo o que aparece no vídeo está nas fotos. O movimento (câmera, transições, água e folhas) é gerado por IA.</p>
-  <p class="fiel"><strong>Feito só com estas 11 fotos.</strong> Os ambientes do vídeo são os destas fotos.</p><ul class="tira" aria-label="Fotos usadas no vídeo casa de praia" tabindex="0"><li><img src="demos/casa-praia-ia/G_g0L4ygli0.webp" alt="Foto de origem: Piscina e cabana" width="180" height="120" loading="lazy" decoding="async"><span>Piscina e cabana</span></li><li><img src="demos/casa-praia-ia/rlesyj-1Kv0.webp" alt="Foto de origem: Fachada" width="180" height="120" loading="lazy" decoding="async"><span>Fachada</span></li><li><img src="demos/casa-praia-ia/qLJMuJkD4as.webp" alt="Foto de origem: Entrada" width="180" height="120" loading="lazy" decoding="async"><span>Entrada</span></li><li><img src="demos/casa-praia-ia/LtlBlCal4Fw.webp" alt="Foto de origem: Sala de pé-direito duplo" width="180" height="120" loading="lazy" decoding="async"><span>Sala de pé-direito duplo</span></li><li><img src="demos/casa-praia-ia/1iiFe6dFQ_M.webp" alt="Foto de origem: Sala com cortina alta" width="180" height="120" loading="lazy" decoding="async"><span>Sala com cortina alta</span></li><li><img src="demos/casa-praia-ia/McYRvVVEliE.webp" alt="Foto de origem: Varanda com rede" width="180" height="120" loading="lazy" decoding="async"><span>Varanda com rede</span></li><li><img src="demos/casa-praia-ia/GGx0rUwnSPk.webp" alt="Foto de origem: Varanda" width="180" height="120" loading="lazy" decoding="async"><span>Varanda</span></li><li><img src="demos/casa-praia-ia/baap3vgDMcU.webp" alt="Foto de origem: Mesa da área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Mesa da área gourmet</span></li><li><img src="demos/casa-praia-ia/OsUiWBJ4AXU.webp" alt="Foto de origem: Bar da área gourmet" width="180" height="120" loading="lazy" decoding="async"><span>Bar da área gourmet</span></li><li><img src="demos/casa-praia-ia/pzVKBM1fbJk.webp" alt="Foto de origem: Piscina com pergolado" width="180" height="120" loading="lazy" decoding="async"><span>Piscina com pergolado</span></li><li><img src="demos/casa-praia-ia/89GEBhKzyJ4.webp" alt="Foto de origem: Mini piscina da varanda" width="180" height="120" loading="lazy" decoding="async"><span>Mini piscina da varanda</span></li></ul>
-</article></div>
-</div></section>
+<section class="hero" id="inicio" data-wa="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20">
+ <div class="video">
+  <video id="hero" muted loop playsinline preload="metadata" poster="assets/poster.webp" width="1280" height="720" aria-label="Vídeo de demonstração, começa sem som: um imóvel fictício à beira-mar ao pôr do sol, gerado por IA"></video>
+  <button type="button" id="hero-snd" class="pp som" aria-pressed="false"><span aria-hidden="true">♪</span>Som</button>
+  <button type="button" id="hero-pp" class="pp" aria-label="Pausar o vídeo"><span aria-hidden="true">❚❚</span></button>
+ </div>
+ <div class="copy">
+  <p class="eyebrow">Vídeo de imóvel, feito com as suas fotos</p>
+  <h1>O vídeo do seu imóvel, <em>fiel às suas fotos.</em></h1>
+  <p class="sub">Para Instagram, site e WhatsApp. Sem nova sessão e sem visita: o vídeo sai das fotos que você já tem.</p>
+  <div class="acoes"><a class="btn cta" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2.5 22l5.400-1.400c1.300.7 2.700 1 4.100 1 5.500 0 10-4.300 10-9.600S17.500 2 12 2z"/></svg><span>Pedir amostra pelo WhatsApp</span></a></div>
+  <p class="micro">A amostra de 1 cômodo não tem custo. Mande o nome do imóvel.</p>
+  <p class="nota-ia"><b>Este imóvel não existe.</b> É uma demonstração gerada por IA, para mostrar o padrão de imagem. Não é um cliente nem resultado de fotos de cliente. <a class="link" href="#fotos-reais">Veja um exemplo feito com fotos reais.</a></p>
+ </div>
+</section>
 
-<section aria-labelledby="h-como"><div class="wrap">
-  <h2 id="h-como">Como funciona</h2>
+<section class="section" id="como"><div class="wrap como">
+ <figure class="foto reveal"><img src="assets/suite.webp" width="800" height="450" loading="lazy" decoding="async" alt="Quadro de uma suíte aberta para o mar ao entardecer, em demonstração de imóvel fictício gerado por IA"><figcaption>Quadro do vídeo de demonstração. Imóvel fictício, gerado por IA.</figcaption></figure>
+ <div class="reveal">
+  <p class="eyebrow">Como funciona</p>
+  <h2>Você vê o vídeo antes de decidir.</h2>
   <ol class="passos">
-    <li>Você autoriza: responde com o nome da casa que quer ver.</li>
-    <li>Eu faço o vídeo de 1 cômodo com as fotos do site/Instagram de vocês e entrego em até 2 dias úteis. Sem custo.</li>
-    <li>Você vê e decide. Se gostar, a gente conversa sobre a casa inteira ou sobre o portfólio.</li>
+   <li><b>Você pede</b><span>Manda o nome do imóvel ou as fotos dele.</span></li>
+   <li><b>Eu faço a amostra</b><span>Um cômodo, com as fotos que você mandar ou que já estão no seu site ou Instagram, em até 2 dias úteis. Sem custo.</span></li>
+   <li><b>Você decide</b><span>Se gostar, a gente conversa sobre a casa inteira ou sobre o portfólio.</span></li>
   </ol>
+ </div>
 </div></section>
 
-<section aria-labelledby="h-recebe" style="padding-top:8px"><div class="wrap">
-  <h2 id="h-recebe">O que você recebe</h2>
-  <p class="lead">O vídeo da casa em vertical (9:16, para Reels e Stories) e horizontal (16:9, para site, YouTube e WhatsApp), com trilha original da Price Digital, 1 ajuste incluído e prazo combinado por escrito.</p>
-  <p class="lead"><strong>Quanto custa?</strong> A amostra é sem custo. O orçamento vem depois que você vê o vídeo da sua casa. Se preferir saber antes, é só perguntar.</p>
+<section class="section sand" id="recebe" data-wa="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20"><div class="wrap recebe">
+ <div class="reveal">
+  <div class="formatos">
+   <figure class="h"><div class="foto"><img src="assets/fachada.webp" width="800" height="450" loading="lazy" decoding="async" alt="Quadro horizontal 16:9 de uma fachada iluminada com piscina, imóvel fictício gerado por IA"></div></figure>
+   <figure class="v"><div class="foto"><img src="assets/lareira-v.webp" width="540" height="960" loading="lazy" decoding="async" alt="Quadro vertical 9:16 de uma lareira e sofá à beira da piscina, com o aviso de imóvel fictício gerado por IA"></div></figure>
+  </div>
+  <p class="fine" style="margin-top:10px">Horizontal (16:9) para site, YouTube e WhatsApp. Vertical (9:16) para Reels e Stories. Quadros de demonstração: imóvel fictício, gerado por IA.</p>
+ </div>
+ <div class="reveal">
+  <p class="eyebrow">O que você recebe</p>
+  <h2>Um vídeo curto, pronto para postar.</h2>
+  <ul class="lista">
+   <li>Vídeo de 20 a 30 segundos, até 6 tomadas</li>
+   <li>1 formato incluído: vertical ou horizontal</li>
+   <li>1 ajuste incluído, e o prazo combinado por escrito</li>
+  </ul>
+  <div class="preco"><small>a partir de</small><strong>R$ 497</strong><p>por vídeo, pacote Essencial. Mais tomadas ou os dois formatos: orçamento por escrito antes de começar.</p></div>
+  <p class="fine">A amostra de 1 cômodo não tem custo: 1 amostra por imóvel, com fotos que você tem direito de usar, sem compromisso de contratar. Feita só para você, não é publicada.</p>
+  <p><a class="btn cta" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2.5 22l5.400-1.400c1.300.7 2.700 1 4.100 1 5.500 0 10-4.300 10-9.600S17.500 2 12 2z"/></svg><span>Pedir amostra pelo WhatsApp</span></a></p>
+ </div>
 </div></section>
 
-<section aria-labelledby="h-faq" style="padding-top:8px"><div class="wrap">
-  <h2 id="h-faq">Perguntas frequentes</h2>
-  <details><summary>As fotos são do meu fotógrafo. Posso?</summary><p>Sim, com a autorização de quem tem o direito de uso. Explico em uma linha na proposta.</p></details>
-  <details><summary>Preciso receber visita ou parar a casa?</summary><p>Não. O vídeo é feito só com as fotos que você já tem.</p></details>
-  <details><summary>A amostra fica pública?</summary><p>Não. Ela só abre por um link enviado a você e sai do ar na data informada na própria página.</p></details>
-  <details><summary>O vídeo aparece no anúncio do Airbnb?</summary><p>O anúncio comum do Airbnb não aceita vídeo. O uso é no Instagram, no site e no WhatsApp.</p></details>
-  <details><summary>Posso pedir só uma casa?</summary><p>Pode. Para mais casas há pacotes fechados, sem fidelidade.</p></details>
-  <details><summary>O vídeo é feito com inteligência artificial?</summary><p>Sim. Os ambientes, móveis, acabamentos e a vista são os das suas fotos. A inteligência artificial cria o movimento da câmera, o movimento leve da água e das folhas e, quando há duas fotos do mesmo ambiente, o caminho de uma para a outra. Confiro cada cena com as fotos e descarto o que muda o imóvel. O vídeo sai com o aviso "Tudo o que aparece no vídeo está nas fotos. O movimento (câmera, transições, água e folhas) é gerado por IA.", e ao postar no Instagram vale marcar "Informações de IA".</p></details>
-  <details><summary>Vocês guardam os vídeos?</summary><p>Guardo uma cópia por 90 dias após a entrega, só para reenviar se você perder o arquivo. Depois disso, apago da minha base, por isso vale salvar assim que receber.</p></details>
-  <details><summary>E se eu desistir depois de pagar o sinal?</summary><p>Se for antes de eu começar, o sinal volta inteiro. Depois que a prévia é entregue, o sinal não é devolvido.</p></details>
+<section class="section" id="fotos-reais"><div class="wrap reais">
+ <div class="reveal">
+  <div class="tela"><video controls playsinline preload="none" poster="assets/praia-vertical.webp" width="360" height="640" aria-label="Vídeo de demonstração vertical de uma casa de praia, feito com fotos de banco livre" src="assets/praia-vertical.mp4"></video></div>
+ </div>
+ <div class="reveal">
+  <span class="selo">Exemplo com fotos reais</span>
+  <h2>O mesmo método, a partir de fotos de verdade.</h2>
+  <p class="lead">O imóvel do topo é fictício. Este é o caminho que o seu vídeo faz: uma casa de praia, 11 fotos de banco livre, e o vídeo que sai delas. Não é um cliente.</p>
+  <figure class="par"><div><img src="assets/foto-original.webp" width="280" height="349" loading="lazy" decoding="async" alt="Foto original da piscina com pergolado, usada no vídeo"><span>Foto original</span></div><div><img src="assets/quadro-video.webp" width="236" height="419" loading="lazy" decoding="async" alt="Primeiro quadro do vídeo, feito a partir da foto ao lado"><span>Quadro do vídeo</span></div><figcaption>Foto: Alef Morais / <a class="link" href="https://unsplash.com/photos/pzVKBM1fbJk" rel="noopener">Unsplash</a> (banco livre).</figcaption></figure>
+ </div>
 </div></section>
 
-<section aria-labelledby="h-quem"><div class="wrap"><div class="quem">
-  <h2 id="h-quem">Quem faz</h2>
-  <p>Bêérre Price | Price Digital, Rio de Janeiro/RJ. CNPJ 63.035.765/0001-87. Quem faz os vídeos é o Bêérre Price, casa por casa.</p>
-  <p>Contato: <a href="mailto:pricedigital.contato@gmail.com">pricedigital.contato@gmail.com</a> · WhatsApp: <a href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">(21) 98465-9410</a> · Instagram: <a href="https://www.instagram.com/pricedigital.video/" rel="noopener">@pricedigital.video</a></p>
-  <p><a class="btn" style="margin-top:8px" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a></p>
-</div></div></section>
+<section class="section dark" id="ia"><div class="wrap">
+ <div class="reveal">
+  <p class="eyebrow">O que é IA</p>
+  <h2>Sem surpresa: a IA cria o movimento.</h2>
+  <p class="aviso ia-aviso">Tudo o que aparece no vídeo está nas fotos. O movimento (câmera, transições, água e folhas) é gerado por IA.</p>
+  <ul class="tres">
+   <li><b>Os ambientes são os seus</b><span>Móveis, acabamentos e vista vêm das suas fotos. Nenhum ambiente é acrescentado.</span></li>
+   <li><b>O movimento é gerado</b><span>A IA cria a câmera, o movimento leve da água e das folhas e, quando há duas fotos do mesmo ambiente, o caminho de uma para a outra.</span></li>
+   <li><b>Eu confiro cada cena</b><span>Comparo com as fotos e descarto o que muda o imóvel. O vídeo que você recebe sai com esse aviso, e no Instagram vale marcar "Informações de IA".</span></li>
+  </ul>
+ </div>
+</div></section>
+
+<section class="section" id="faq"><div class="wrap">
+ <p class="eyebrow">Perguntas frequentes</p>
+ <h2>O que costumam perguntar.</h2>
+ <div style="max-width:820px">
+ <details><summary>O imóvel do vídeo do topo é real?</summary><p>Não. É um imóvel fictício, gerado por IA, feito para mostrar o padrão de imagem. Não é um cliente. O exemplo com fotos reais (banco livre) está em "O mesmo método, a partir de fotos de verdade".</p></details>
+ <details><summary>Quanto custa?</summary><p>O vídeo de imóvel começa em R$ 497 (pacote Essencial: 20 a 30 segundos, até 6 tomadas, 1 formato e 1 ajuste). Mais tomadas ou os dois formatos têm orçamento por escrito antes de começar. A amostra de 1 cômodo não tem custo.</p></details>
+ <details><summary>Qual é o prazo?</summary><p>A amostra de 1 cômodo sai em até 2 dias úteis. O prazo do vídeo completo é combinado por escrito, depois de ver o material.</p></details>
+ <details><summary>O vídeo é feito com inteligência artificial?</summary><p>Sim. Os ambientes, móveis, acabamentos e a vista são os das suas fotos. A inteligência artificial cria o movimento da câmera, o movimento leve da água e das folhas e, quando há duas fotos do mesmo ambiente, o caminho de uma para a outra. Confiro cada cena com as fotos e descarto o que muda o imóvel. O vídeo sai com o aviso: Tudo o que aparece no vídeo está nas fotos. O movimento (câmera, transições, água e folhas) é gerado por IA.</p></details>
+ <details><summary>As fotos são do meu fotógrafo. Posso?</summary><p>Sim, com a autorização, por escrito, de quem tem o direito de uso das fotos. Só trabalho com fotos que você tem direito de usar.</p></details>
+ <details><summary>Preciso receber visita ou parar a casa?</summary><p>Não. Tudo é remoto e o vídeo é feito só com as fotos que você já tem. A confiança vem de um termo por escrito, de pagamento em duas partes (metade para começar, metade na entrega aprovada) e da amostra antes de contratar.</p></details>
+ <details><summary>A amostra fica pública?</summary><p>Não. Ela é só sua: abre por um link enviado a você e sai do ar na data informada na própria página.</p></details>
+ <details><summary>O vídeo aparece no anúncio do Airbnb?</summary><p>O anúncio comum do Airbnb não aceita vídeo. O uso é no Instagram, no site e no WhatsApp.</p></details>
+ <details><summary>Você guarda os vídeos depois da entrega?</summary><p>Guardo uma cópia por 90 dias após a entrega, só para reenviar se você perder o arquivo. Depois disso, apago da minha base, por isso vale salvar assim que receber.</p></details>
+ <details><summary>E se eu desistir depois de pagar o sinal?</summary><p>Se for antes de eu começar, o sinal volta inteiro. Depois que a prévia é entregue, o sinal não é devolvido.</p></details>
+ </div>
+</div></section>
+
+<section class="section sand" id="quem"><div class="wrap quem">
+ <div class="reveal"><p class="eyebrow">Quem faz</p>
+ <h2>Uma pessoa, com nome e CNPJ.</h2>
+ <p class="lead">A Price Digital é um estúdio de uma pessoa só: Bêérre Price, no Rio de Janeiro. Quem faz os vídeos sou eu, casa por casa. Uso IA como ferramenta de produção e aviso onde ela foi usada.</p></div>
+ <dl class="reveal">
+  <div><dt>Responsável</dt><dd>Bêérre Price | Price Digital</dd></div>
+  <div><dt>Empresa</dt><dd>Beerre Brunno Ferrari Price (MEI)<br>CNPJ 63.035.765/0001-87</dd></div>
+  <div><dt>Onde</dt><dd>Rio de Janeiro/RJ · atendimento remoto</dd></div>
+  <div><dt>Contato</dt><dd><a class="link" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">WhatsApp (21) 98465-9410</a><br><a class="link" href="mailto:pricedigital.contato@gmail.com">pricedigital.contato@gmail.com</a><br><a class="link" href="https://www.instagram.com/pricedigital.video/" rel="noopener">@pricedigital.video</a></dd></div>
+ </dl>
+</div></section>
+
+<section class="section dark contato" id="contato" data-wa="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20"><div class="wrap">
+ <p class="eyebrow">Amostra sem custo</p>
+ <h2>Qual imóvel você quer ver em vídeo?</h2>
+ <p class="lead">Mande o nome do imóvel. A mensagem já vai pronta; você só edita e envia.</p>
+ <div class="acoes"><a class="btn cta" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2.5 22l5.400-1.400c1.300.7 2.700 1 4.100 1 5.500 0 10-4.300 10-9.600S17.500 2 12 2z"/></svg><span>Pedir amostra pelo WhatsApp</span></a></div>
+ <p class="fine" style="margin-top:18px">Prefere e-mail? <a class="link" href="mailto:pricedigital.contato@gmail.com?subject=Pode%20fazer%20a%20amostra&amp;body=Ol%C3%A1%21%20Pode%20fazer%20a%20amostra%20de%201%20c%C3%B4modo.%20Nome%20da%20casa%3A%20%0AEmpresa%3A%20%0A">pricedigital.contato@gmail.com</a>. Não há formulário nem cookies.</p>
+</div></section>
 </main>
 
-<footer class="rodape"><div class="wrap">
-  <p>Para não receber mais mensagens da Price Digital, responda "remover" a qualquer mensagem.</p>
-  <p>Price Digital · CNPJ 63.035.765/0001-87 · Rio de Janeiro/RJ · <a href="privacidade.html">Privacidade</a></p>
-  <details class="creditos"><summary>Créditos das fotos de demonstração</summary>
-    <p>Fotos de banco livre, licença Unsplash (uso livre). Trilha original da Price Digital.</p>
-    <ul><li>Demonstração: casa de praia · 1iiFe6dFQ_M.jpg: <a href="https://unsplash.com/photos/1iiFe6dFQ_M" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · 89GEBhKzyJ4.jpg: <a href="https://unsplash.com/photos/89GEBhKzyJ4" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · GGx0rUwnSPk.jpg: <a href="https://unsplash.com/photos/GGx0rUwnSPk" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · G_g0L4ygli0.jpg: <a href="https://unsplash.com/photos/G_g0L4ygli0" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · LtlBlCal4Fw.jpg: <a href="https://unsplash.com/photos/LtlBlCal4Fw" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · McYRvVVEliE.jpg: <a href="https://unsplash.com/photos/McYRvVVEliE" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · OsUiWBJ4AXU.jpg: <a href="https://unsplash.com/photos/OsUiWBJ4AXU" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · baap3vgDMcU.jpg: <a href="https://unsplash.com/photos/baap3vgDMcU" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · pzVKBM1fbJk.jpg: <a href="https://unsplash.com/photos/pzVKBM1fbJk" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · qLJMuJkD4as.jpg: <a href="https://unsplash.com/photos/qLJMuJkD4as" rel="noopener">Unsplash</a></li>
-<li>Demonstração: casa de praia · rlesyj-1Kv0.jpg: <a href="https://unsplash.com/photos/rlesyj-1Kv0" rel="noopener">Unsplash</a></li></ul></details>
+<footer class="footer dark"><div class="wrap">
+ <p><a class="brand" href="#inicio" aria-label="Price Digital, início">PRICE<span> / </span>DIGITAL</a></p>
+ <p>© 2026 Price Digital · Beerre Brunno Ferrari Price (MEI) · CNPJ 63.035.765/0001-87 · Rio de Janeiro/RJ</p>
+ <p>Parte do trabalho usa inteligência artificial como ferramenta. Onde há conteúdo gerado por IA, o aviso fica junto da peça.</p>
+ <p>Para não receber mais mensagens da Price Digital, responda "remover" a qualquer mensagem.</p>
+ <p><a href="termos.html">Termos do serviço</a> · <a href="privacidade.html">Política de privacidade</a></p>
+ <p>Trilha do vídeo de demonstração do topo: leberch, Pixabay (licença Pixabay Content).</p>
 </div></footer>
 
-<div class="barra"><a class="btn" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener">Pedir amostra pelo WhatsApp</a></div>
+<div class="barra" id="barra"><a class="btn" href="https://wa.me/5521984659410?text=Ol%C3%A1%21%20Vim%20pelo%20site%20%28ref.%20P1b%29%20e%20quero%20a%20amostra%20de%201%20c%C3%B4modo%2C%20sem%20custo.%0ANome%20da%20casa%20ou%20da%20empresa%3A%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2.5 22l5.400-1.400c1.300.7 2.700 1 4.100 1 5.500 0 10-4.300 10-9.600S17.500 2 12 2z"/></svg><span>Pedir amostra pelo WhatsApp</span></a></div>
 
 <script>
-(function(){
-  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var h = document.getElementById('hero'), pp = document.getElementById('hero-pp');
-  function ui(){ var t = !h.paused; pp.setAttribute('aria-label', t ? 'Pausar o vídeo' : 'Tocar o vídeo'); pp.firstChild.textContent = t ? '❚❚' : '▶'; }
-  pp.addEventListener('click', function(){ if (h.paused) h.play(); else h.pause(); });
-  h.addEventListener('play', ui); h.addEventListener('pause', ui);
-  if (!reduz) { var p = h.play(); if (p && p.catch) p.catch(ui); }
-  ui();
-  document.querySelectorAll('.orient').forEach(function(b){
-    b.addEventListener('click', function(){
-      var id = b.dataset.demo, box = document.querySelector('.player[data-demo="'+id+'"]'), v = box.querySelector('video');
-      var horiz = b.getAttribute('aria-pressed') !== 'true';
-      v.pause(); v.src = 'demos/'+id+'/'+(horiz?'horizontal':'vertical')+'.mp4';
-      v.poster = 'demos/'+id+'/'+(horiz?'horizontal':'vertical')+'.webp';
-      box.classList.toggle('h', horiz); b.setAttribute('aria-pressed', horiz);
-      b.textContent = horiz ? 'Ver em vertical (9:16)' : 'Ver em horizontal (16:9)'; v.load();
-    });
-  });
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const h=$('#hero'),pp=$('#hero-pp');let usr=false;
+/* mobile baixa só a versão 540p (~1,4 MB); desktop, 720p (~4,3 MB) */
+h.src=matchMedia('(max-width:719px)').matches?'assets/hero-m.mp4':'assets/hero.mp4';
+const ui=()=>{const t=!h.paused;pp.setAttribute('aria-label',t?'Pausar o vídeo':'Tocar o vídeo');pp.firstChild.textContent=t?'❚❚':'▶'};
+const sn=$('#hero-snd');
+sn.addEventListener('click',()=>{h.muted=!h.muted;sn.setAttribute('aria-pressed',!h.muted);if(!h.muted&&h.paused){usr=false;h.play().catch(()=>{})}});
+pp.addEventListener('click',()=>{usr=true;h.paused?h.play():h.pause()});
+h.addEventListener('play',ui);h.addEventListener('pause',ui);
+if(!reduz){const p=h.play();if(p&&p.catch)p.catch(ui);
+ /* pausa quando sai da tela, retoma ao voltar (salvo se a pessoa pausou) */
+ new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){if(!usr)h.play().catch(()=>{})}else h.pause()})},{threshold:.25}).observe(h)}
+ui();
+/* entrada simples */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+$$('.reveal').forEach(el=>io.observe(el));
+/* barra fixa some quando um CTA do corpo está na tela */
+const bar=$('#barra'),vis=new Set();
+const co=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));bar.classList.toggle('off',vis.size>0)});
+$$('main .cta').forEach(el=>co.observe(el));
 })();
 </script>
-</body>
-</html>
+</body></html>
